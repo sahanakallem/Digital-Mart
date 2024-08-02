@@ -1,0 +1,10 @@
+COPY credentials FROM '/path/CSV_files/credentials.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY credentials_admin FROM '/path/CSV_files/credentials_admin.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY customer FROM '/path/CSV_files/customer.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY order_details FROM '/path/CSV_files/order_details.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY orders FROM '/path/CSV_files/orders.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY payments FROM '/path/CSV_files/payments.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY product_category_translation FROM '/path/CSV_files/product_category_translation.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY products FROM '/path/CSV_files/products.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY reviews FROM '/path/CSV_files/reviews.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY sellers FROM '/path/CSV_files/sellers.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
