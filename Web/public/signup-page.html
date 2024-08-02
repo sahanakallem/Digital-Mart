@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Digital Mart - Sign Up</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #e4e9f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .registration-container {
+        background-color: #ffffff;
+        padding: 40px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 360px;
+        text-align: center;
+      }
+
+      .auth-title {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .form-section {
+        margin-bottom: 20px;
+      }
+
+      .form-label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      .form-input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .submit-btn {
+        background-color: #808080;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+
+      .submit-btn:hover {
+        background-color: #696969;
+      }
+
+      .link-section {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      .signup-link {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .signup-link:hover {
+        text-decoration: underline;
+      }
+
+      .brand-logo {
+        width: 80px;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="registration-container">
+      <img src="logo.jpeg" alt="Digital Mart Logo" class="brand-logo" />
+      <h1 class="auth-title">Digital Mart</h1>
+      <h2>Sign Up Here</h2>
+      <form action="/signup-form" method="POST">
+        <div class="form-section">
+          <label for="unique_id" class="form-label">UNIQUE CUSTOMER ID</label>
+          <input
+            type="unique_id"
+            id="unique_id"
+            name="unique_id"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-section">
+          <label for="password" class="form-label">PASSWORD</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-input"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+      <div class="link-section">
+        Already have an account?
+        <a href="login_customer.html" class="signup-link">Log in here</a>
+      </div>
+    </div>
+  </body>
+</html>
